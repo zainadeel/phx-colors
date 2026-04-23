@@ -1,10 +1,8 @@
 /**
  * Build script for @ds-phx/colors
  *
- * 1. Generates colors.css from JSON token sources (Figma export)
- * 2. Copies all CSS token files to dist/
- * 3. Generates tokens.json (machine-readable format for tooling)
- * 4. Generates TypeScript constants for token names
+ * 1. Copies all CSS token files to dist/
+ * 2. Generates TypeScript constants for token names
  */
 import { cpSync, mkdirSync, existsSync, rmSync } from 'node:fs';
 import path from 'node:path';
@@ -29,17 +27,10 @@ function build() {
   const startTime = Date.now();
   console.log('\n🔨 Building @ds-phx/colors...\n');
 
-  // Step 1: Clean dist
   clean();
   mkdirSync(DIST_DIR, { recursive: true });
   mkdirSync(path.join(DIST_DIR, 'themes'), { recursive: true });
-  mkdirSync(path.join(DIST_DIR, 'json'), { recursive: true });
 
-  // Step 2: Generate CSS files from JSON token sources
-  console.log('  → Generating colors.css from Figma token JSON...');
-  execSync('node scripts/generate-color-tokens.mjs', { cwd: PKG_ROOT, stdio: 'inherit' });
-
-  // Step 3: Copy CSS files to dist
   console.log('  → Copying CSS token files to dist/...');
   const cssFiles = [
     'index.css',
@@ -59,8 +50,7 @@ function build() {
     }
   }
 
-  // Copy theme files
-  const themeFiles = ['light.css', 'dark.css'];
+  const themeFiles = ['light.css'];
   for (const file of themeFiles) {
     const src = path.join(SRC_DIR, 'themes', file);
     const dest = path.join(DIST_DIR, 'themes', file);
@@ -69,11 +59,6 @@ function build() {
     }
   }
 
-  // Step 4: Generate JSON tokens
-  console.log('  → Generating JSON token files...');
-  execSync('node scripts/generate-json-tokens.mjs', { cwd: PKG_ROOT, stdio: 'inherit' });
-
-  // Step 5: Generate TypeScript constants
   console.log('  → Generating TypeScript constants...');
   execSync('node scripts/generate-ts-constants.mjs', { cwd: PKG_ROOT, stdio: 'inherit' });
 
@@ -88,7 +73,7 @@ if (isWatch) {
 
   const { watch } = await import('chokidar');
 
-  const watcher = watch([path.join(SRC_DIR, '**/*.css'), path.join(SRC_DIR, '**/*.json')], {
+  const watcher = watch([path.join(SRC_DIR, '**/*.css')], {
     ignoreInitial: true,
   });
 

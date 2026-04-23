@@ -1,17 +1,14 @@
 {
   "name": "@ds-phx/colors",
   "version": "0.0.0",
-  "description": "phx-colors — Phoenix color tokens as CSS custom properties, JSON, and TypeScript constants",
+  "description": "phx-colors — Phoenix color tokens as CSS custom properties and TypeScript constants",
   "keywords": [
     "design-tokens",
     "css-variables",
     "css-custom-properties",
     "design-system",
-    "figma",
     "tokens",
     "colors",
-    "theming",
-    "dark-mode",
     "phoenix"
   ],
   "homepage": "https://github.com/zainadeel/phx-colors#readme",
@@ -33,9 +30,6 @@
     "./globals": "./dist/globals.css",
     "./utilities": "./dist/utilities.css",
     "./themes/light": "./dist/themes/light.css",
-    "./themes/dark": "./dist/themes/dark.css",
-    "./json": "./dist/tokens.json",
-    "./json/colors": "./dist/json/colors.json",
     "./ts": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs",
@@ -50,8 +44,6 @@
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "build:colors": "node scripts/generate-color-tokens.mjs",
-    "build:json": "node scripts/generate-json-tokens.mjs",
     "build:docs": "node scripts/build-docs.mjs",
     "build:ts": "node scripts/generate-ts-constants.mjs",
     "clean": "rm -rf dist",
