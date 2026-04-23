@@ -161,20 +161,6 @@
   --phx-ref-color-white-3: rgba(255, 255, 255, 0.03);
   --phx-ref-color-white-1: rgba(255, 255, 255, 0.01);
 
-  --phx-ref-color-gradient-default-blue: linear-gradient(90deg, #032281 0%, #003AA5 16.67%, #0058C8 33.33%, #0073E7 50%, #0094FF 66.67%, #00B4FF 83.33%, #88D0FF 100%);
-  --phx-ref-color-gradient-default-purple: linear-gradient(90deg, #460871 0%, #680AA7 16.67%, #8B00E7 33.33%, #AD2EFF 50%, #C265FF 66.67%, #D38FFF 83.33%, #E2B7FF 100%);
-  --phx-ref-color-gradient-default-teal: linear-gradient(90deg, #0A3431 0%, #124D4A 16.67%, #176963 33.33%, #1D837C 50%, #22A199 66.67%, #49BBB4 83.33%, #8ED4D0 100%);
-  --phx-ref-color-gradient-default-blue-orange: linear-gradient(90deg, #0058C8 0%, #0073E7 8.33%, #0094FF 16.67%, #00B4FF 25%, #88D0FF 33.33%, #C6E8FF 41.67%, #E3E3E3 50%, #FFDDC7 58.33%, #FFB788 66.67%, #FF8C40 75%, #F76100 83.33%, #C85000 91.67%, #9F4100 100%);
-  --phx-ref-color-gradient-default-blue-red: linear-gradient(90deg, #0058C8 0%, #0073E7 8.33%, #0094FF 16.67%, #00B4FF 25%, #88D0FF 33.33%, #C6E8FF 41.67%, #E3E3E3 50%, #FFDBD9 58.33%, #FFB5B0 66.67%, #FF8A82 75%, #FF574C 83.33%, #EA1000 91.67%, #BD0E00 100%);
-  --phx-ref-color-gradient-default-purple-teal: linear-gradient(90deg, #8B00E7 0%, #AD2EFF 8.33%, #C265FF 16.67%, #D38FFF 25%, #E2B7FF 33.33%, #EDDDFD 41.67%, #E3E3E3 50%, #C7E9E8 58.33%, #8ED4D0 66.67%, #49BBB4 75%, #22A199 83.33%, #1D837C 91.67%, #176963 100%);
-  --phx-ref-color-gradient-default-purple-yellow: linear-gradient(90deg, #8B00E7 0%, #AD2EFF 8.33%, #C265FF 16.67%, #D38FFF 25%, #E2B7FF 33.33%, #EDDDFD 41.67%, #E3E3E3 50%, #FFDF92 58.33%, #FFBC1C 66.67%, #E29E01 75%, #BF8500 83.33%, #9D6D00 91.67%, #7D5800 100%);
-  --phx-ref-color-gradient-inverted-blue: linear-gradient(90deg, #88D0FF 0%, #00B4FF 16.67%, #0094FF 33.33%, #0073E7 50%, #0058C8 66.67%, #003AA5 83.33%, #032281 100%);
-  --phx-ref-color-gradient-inverted-purple: linear-gradient(90deg, #E2B7FF 0%, #D38FFF 16.67%, #C265FF 33.33%, #AD2EFF 50%, #8B00E7 66.67%, #680AA7 83.33%, #460871 100%);
-  --phx-ref-color-gradient-inverted-teal: linear-gradient(90deg, #8ED4D0 0%, #49BBB4 16.67%, #22A199 33.33%, #1D837C 50%, #176963 66.67%, #124D4A 83.33%, #0A3431 100%);
-  --phx-ref-color-gradient-inverted-blue-orange: linear-gradient(90deg, #00B4FF 0%, #0094FF 8.33%, #0073E7 16.67%, #0058C8 25%, #003AA5 33.33%, #032281 41.67%, #2E2E2E 50%, #502000 58.33%, #762E00 66.67%, #9F4100 75%, #C85000 83.33%, #F76100 91.67%, #FF8C40 100%);
-  --phx-ref-color-gradient-inverted-blue-red: linear-gradient(90deg, #00B4FF 0%, #0094FF 8.33%, #0073E7 16.67%, #0058C8 25%, #003AA5 33.33%, #032281 41.67%, #2E2E2E 50%, #620501 58.33%, #8E0800 66.67%, #BD0E00 75%, #EA1000 83.33%, #FF574C 91.67%, #FF8A82 100%);
-  --phx-ref-color-gradient-inverted-purple-teal: linear-gradient(90deg, #D38FFF 0%, #C265FF 8.33%, #AD2EFF 16.67%, #8B00E7 25%, #680AA7 33.33%, #460871 41.67%, #2E2E2E 50%, #0A3431 58.33%, #124D4A 66.67%, #176963 75%, #1D837C 83.33%, #22A199 91.67%, #49BBB4 100%);
-  --phx-ref-color-gradient-inverted-purple-yellow: linear-gradient(90deg, #D38FFF 0%, #C265FF 8.33%, #AD2EFF 16.67%, #8B00E7 25%, #680AA7 33.33%, #460871 41.67%, #2E2E2E 50%, #3C2B00 58.33%, #5B4000 66.67%, #7D5800 75%, #9D6D00 83.33%, #BF8500 91.67%, #E29E01 100%);
 
   --phx-ref-color-transparent: transparent;
 

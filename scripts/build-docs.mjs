@@ -41,7 +41,7 @@ function getColorGroup(name) {
 
 const REF_HUE_ORDER = [
   'grey', 'blue', 'purple', 'magenta', 'red', 'orange', 'yellow', 'green', 'teal',
-  'black', 'white', 'gradient', 'transparent',
+  'black', 'white', 'transparent',
 ];
 
 function getColorCategory(name) {
@@ -85,7 +85,6 @@ const CATEGORY_LABELS = {
   'ref-teal': 'Reference · Teal',
   'ref-black': 'Reference · Black (alpha)',
   'ref-white': 'Reference · White (alpha)',
-  'ref-gradient': 'Reference · Gradients',
   'ref-transparent': 'Reference · Transparent',
   background: 'Semantic · Background',
   content: 'Semantic · Content',
