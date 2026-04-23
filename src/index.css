@@ -1,0 +1,8 @@
+/**
+ * phx-colors — All Tokens
+ *
+ * Import this file to get all color tokens. For selective imports:
+ *   @import '@ds-phx/colors/colors';
+ */
+
+@import './colors.css';
