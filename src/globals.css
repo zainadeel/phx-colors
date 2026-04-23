@@ -2,8 +2,7 @@
  * phx-colors — Global Styles
  *
  * Base styles that consuming apps can import alongside color tokens.
- * Includes font loading, color scheme, reduced-motion support, and
- * theme transition guards.
+ * Includes font loading, color scheme, and reduced-motion support.
  *
  * Usage:
  *   @import '@ds-phx/colors';
@@ -44,18 +43,19 @@ body {
 }
 
 body {
-  color: var(--color-foreground-primary);
+  color: var(--phx-web-color-content-standard);
+  background-color: var(--phx-web-color-background-primary);
 }
 
 /* Global text selection styling */
 *::selection {
-  background-color: var(--color-background-faint-brand);
-  color: var(--color-foreground-bold-brand);
+  background-color: var(--phx-ref-color-blue-10);
+  color: var(--phx-web-color-content-emphasis);
 }
 
 *::-moz-selection {
-  background-color: var(--color-background-faint-brand);
-  color: var(--color-foreground-bold-brand);
+  background-color: var(--phx-ref-color-blue-10);
+  color: var(--phx-web-color-content-emphasis);
 }
 
 /* Disable text selection for buttons and interactive elements */
@@ -69,14 +69,4 @@ button {
 /* Remove default browser focus outlines */
 *:focus {
   outline: none;
-}
-
-/* Disable color transitions during theme changes for instant updates */
-html.theme-changing,
-html.theme-changing *,
-html.theme-changing *::before,
-html.theme-changing *::after {
-  transition: none !important;
-  transition-duration: 0ms !important;
-  transition-delay: 0ms !important;
 }

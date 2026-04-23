@@ -27,13 +27,10 @@ jobs:
           for f in \
             dist/index.css \
             dist/colors.css \
-            dist/dimensions.css \
-            dist/typography.css \
-            dist/effects.css \
             dist/reset.css \
             dist/globals.css \
             dist/utilities.css \
-            dist/tokens.json \
+            dist/themes/light.css \
             dist/index.mjs \
             dist/index.cjs \
             dist/index.d.ts; do

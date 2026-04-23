@@ -1,18 +1,12 @@
 /**
- * Utility CSS Classes
- * Reusable utility classes for common patterns across components
+ * phx-colors — Utility CSS Classes
+ * Reusable utility classes for common patterns.
  */
 
 /* ============================================
    INTERACTION PATTERNS
-   Common hover/pressed overlay patterns for buttons
    ============================================ */
 
-/**
- * Button interaction base
- * Apply to any interactive element that needs hover/pressed states
- * Usage: class="buttonInteraction" on the button element
- */
 .buttonInteraction {
   position: relative;
   overflow: hidden;
@@ -22,9 +16,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-color: var(--color-background-shade);
+  background-color: var(--phx-web-color-background-shade);
   opacity: 0;
-  transition: opacity var(--effect-motion-short-2);
+  transition: opacity 150ms ease;
   pointer-events: none;
   border-radius: inherit;
   z-index: 1;
@@ -43,19 +37,7 @@
 }
 
 /* ============================================
-   BUTTON PRESS ANIMATION
-   Scale-down effect on press
-   ============================================ */
-
-/**
- * Button press scale effect
- * Already exists in globals.css but documented here for reference
- * Usage: class="buttonPress" on the button element
- */
-
-/* ============================================
    FOCUS STATES
-   Consistent focus ring styles
    ============================================ */
 
 .focusRing {
@@ -63,30 +45,20 @@
 }
 
 .focusRing:focus-visible {
-  outline: var(--dimension-stroke-width-025) solid var(--color-foreground-medium-brand);
-  outline-offset: var(--dimension-offset-025);
+  outline: 2px solid var(--phx-web-color-stroke-active);
+  outline-offset: 2px;
 }
 
 /* ============================================
    OVERLAY BACKGROUNDS
-   Consistent overlay backgrounds for hover/pressed states
    ============================================ */
 
-/**
- * Hover overlay - use for subtle hover feedback
- * Add as a pseudo-element or separate div
- */
 .hoverOverlay {
-  background-color: var(--color-background-shade);
-  opacity: var(--opacity-interaction-hover, 0.08);
+  background-color: var(--phx-web-color-background-hover);
 }
 
-/**
- * Pressed overlay - use for active/pressed feedback
- */
 .pressedOverlay {
-  background-color: var(--color-background-shade);
-  opacity: var(--opacity-interaction-pressed, 0.16);
+  background-color: var(--phx-web-color-background-pressed);
 }
 
 /* ============================================
@@ -94,11 +66,12 @@
    ============================================ */
 
 .selected {
-  background-color: var(--color-background-secondary);
+  background-color: var(--phx-web-color-background-active);
 }
 
 .selectedBold {
-  background-color: var(--color-background-translucent);
+  background-color: var(--phx-web-color-background-bold-active);
+  color: var(--phx-web-color-content-on-bold-emphasis);
 }
 
 /* ============================================
@@ -158,30 +131,10 @@
    ============================================ */
 
 .hideScrollbar {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .hideScrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
-/* ============================================
-   TRANSITION UTILITIES
-   ============================================ */
-
-.transitionColors {
-  transition: color var(--effect-motion-short-2),
-              background-color var(--effect-motion-short-2),
-              border-color var(--effect-motion-short-2),
-              fill var(--effect-motion-short-2),
-              stroke var(--effect-motion-short-2);
-}
-
-.transitionAll {
-  transition: all var(--effect-motion-medium-1);
-}
-
-.transitionTransform {
-  transition: transform var(--effect-motion-short-2);
+  display: none;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,13 +22,6 @@
       --fg-muted: rgb(0 0 0 / 0.5);
       --divider:  rgb(0 0 0 / 0.1);
       color-scheme: light;
-    }
-    [data-theme="dark"] {
-      --bg:       #000000;
-      --fg:       #ffffff;
-      --fg-muted: rgb(255 255 255 / 0.5);
-      --divider:  rgb(255 255 255 / 0.1);
-      color-scheme: dark;
     }
 
     /* ── Reset / base ─────────────────────────────────────────────────── */
@@ -496,11 +489,6 @@
       <button class="toggle-btn" data-group="semantic">Semantic</button>
       <button class="toggle-btn" data-group="data">Data</button>
     </div>
-    <div class="vdivider" aria-hidden="true"></div>
-    <div class="text-toggle" role="group" aria-label="Color theme">
-      <button class="toggle-btn" id="theme-light-btn">Light</button>
-      <button class="toggle-btn" id="theme-dark-btn">Dark</button>
-    </div>
   </div>
 </nav>
 
@@ -516,7 +504,6 @@
 
 let group    = localStorage.getItem('phx-colors-group') || 'all';
 let query    = '';
-let theme    = localStorage.getItem('phx-colors-theme') || 'light';
 
 // ── Refs ──────────────────────────────────────────────────────────────────────
 
@@ -524,8 +511,6 @@ const contentEl    = document.getElementById('content');
 const searchEl     = document.getElementById('search');
 const searchCount  = document.getElementById('search-count');
 const toast        = document.getElementById('toast');
-const themeLightBtn = document.getElementById('theme-light-btn');
-const themeDarkBtn  = document.getElementById('theme-dark-btn');
 
 // ── Search sizer ──────────────────────────────────────────────────────────────
 
@@ -538,19 +523,6 @@ function syncSearchWidth() {
   sizer.textContent = searchEl.value || searchEl.placeholder;
   searchEl.style.width = Math.ceil(sizer.offsetWidth) + 4 + 'px';
 }
-
-// ── Theme ─────────────────────────────────────────────────────────────────────
-
-function applyTheme(t) {
-  theme = t;
-  document.documentElement.setAttribute('data-theme', t);
-  themeLightBtn.classList.toggle('active', t === 'light');
-  themeDarkBtn.classList.toggle('active', t === 'dark');
-}
-
-applyTheme(theme);
-themeLightBtn.addEventListener('click', () => { applyTheme('light'); localStorage.setItem('phx-colors-theme', 'light'); });
-themeDarkBtn.addEventListener('click',  () => { applyTheme('dark');  localStorage.setItem('phx-colors-theme', 'dark'); });
 
 // ── Group toggle ──────────────────────────────────────────────────────────────
 
@@ -612,7 +584,7 @@ function render() {
   if (filtered.length === 0) {
     const msg = query
       ? `<div class="empty-state"><p>No tokens match &ldquo;${escHtml(query)}&rdquo;</p><small>Try a different search</small></div>`
-      : `<div class="empty-state"><p>No tokens yet</p><small>Drop Figma color exports into src/json/colors/ and run npm run build</small></div>`;
+      : `<div class="empty-state"><p>No tokens yet</p><small>Edit src/colors.css and run npm run build</small></div>`;
     contentEl.className = '';
     contentEl.innerHTML = msg;
     return;
@@ -633,7 +605,7 @@ function renderColors(tokens) {
     if (t.category && t.category !== lastCategory) {
       const h = document.createElement('div');
       h.className = 'color-group-header';
-      h.textContent = humanizeColorCategory(t.category);
+      h.textContent = t.categoryLabel || t.category;
       frag.appendChild(h);
       lastCategory = t.category;
       lastShade = null;
@@ -669,11 +641,6 @@ function renderColors(tokens) {
   contentEl.innerHTML = '';
   contentEl.appendChild(frag);
 }
-
-function humanizeColorCategory(cat) {
-  return cat.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-}
-
 
 // ── Copy ──────────────────────────────────────────────────────────────────────
 
