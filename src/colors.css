@@ -502,6 +502,15 @@
   --phx-web-color-data-div-blue-orange-7-5: var(--phx-ref-color-orange-20);
   --phx-web-color-data-div-blue-orange-7-6: var(--phx-ref-color-orange-40);
   --phx-web-color-data-div-blue-orange-7-7: var(--phx-ref-color-orange-60);
+  --phx-web-color-data-div-blue-orange-9-1: var(--phx-ref-color-blue-60);
+  --phx-web-color-data-div-blue-orange-9-2: var(--phx-ref-color-blue-40);
+  --phx-web-color-data-div-blue-orange-9-3: var(--phx-ref-color-blue-30);
+  --phx-web-color-data-div-blue-orange-9-4: var(--phx-ref-color-blue-20);
+  --phx-web-color-data-div-blue-orange-9-5: var(--phx-ref-color-grey-10);
+  --phx-web-color-data-div-blue-orange-9-6: var(--phx-ref-color-orange-20);
+  --phx-web-color-data-div-blue-orange-9-7: var(--phx-ref-color-orange-30);
+  --phx-web-color-data-div-blue-orange-9-8: var(--phx-ref-color-orange-40);
+  --phx-web-color-data-div-blue-orange-9-9: var(--phx-ref-color-orange-60);
 
   /* Blue-Red shades */
   --phx-web-color-data-div-blue-red-5-1: var(--phx-ref-color-blue-60);
@@ -522,6 +531,15 @@
   --phx-web-color-data-div-blue-red-7-5: var(--phx-ref-color-red-20);
   --phx-web-color-data-div-blue-red-7-6: var(--phx-ref-color-red-40);
   --phx-web-color-data-div-blue-red-7-7: var(--phx-ref-color-red-60);
+  --phx-web-color-data-div-blue-red-9-1: var(--phx-ref-color-blue-60);
+  --phx-web-color-data-div-blue-red-9-2: var(--phx-ref-color-blue-40);
+  --phx-web-color-data-div-blue-red-9-3: var(--phx-ref-color-blue-30);
+  --phx-web-color-data-div-blue-red-9-4: var(--phx-ref-color-blue-20);
+  --phx-web-color-data-div-blue-red-9-5: var(--phx-ref-color-grey-10);
+  --phx-web-color-data-div-blue-red-9-6: var(--phx-ref-color-red-20);
+  --phx-web-color-data-div-blue-red-9-7: var(--phx-ref-color-red-30);
+  --phx-web-color-data-div-blue-red-9-8: var(--phx-ref-color-red-40);
+  --phx-web-color-data-div-blue-red-9-9: var(--phx-ref-color-red-60);
 
   /* Purple-Teal shades */
   --phx-web-color-data-div-purple-teal-5-1: var(--phx-ref-color-purple-60);
@@ -542,6 +560,15 @@
   --phx-web-color-data-div-purple-teal-7-5: var(--phx-ref-color-teal-20);
   --phx-web-color-data-div-purple-teal-7-6: var(--phx-ref-color-teal-40);
   --phx-web-color-data-div-purple-teal-7-7: var(--phx-ref-color-teal-60);
+  --phx-web-color-data-div-purple-teal-9-1: var(--phx-ref-color-purple-60);
+  --phx-web-color-data-div-purple-teal-9-2: var(--phx-ref-color-purple-40);
+  --phx-web-color-data-div-purple-teal-9-3: var(--phx-ref-color-purple-30);
+  --phx-web-color-data-div-purple-teal-9-4: var(--phx-ref-color-purple-20);
+  --phx-web-color-data-div-purple-teal-9-5: var(--phx-ref-color-grey-10);
+  --phx-web-color-data-div-purple-teal-9-6: var(--phx-ref-color-teal-20);
+  --phx-web-color-data-div-purple-teal-9-7: var(--phx-ref-color-teal-30);
+  --phx-web-color-data-div-purple-teal-9-8: var(--phx-ref-color-teal-40);
+  --phx-web-color-data-div-purple-teal-9-9: var(--phx-ref-color-teal-60);
 
   /* Purple-Yellow shades */
   --phx-web-color-data-div-purple-yellow-5-1: var(--phx-ref-color-purple-60);
@@ -562,6 +589,15 @@
   --phx-web-color-data-div-purple-yellow-7-5: var(--phx-ref-color-yellow-20);
   --phx-web-color-data-div-purple-yellow-7-6: var(--phx-ref-color-yellow-40);
   --phx-web-color-data-div-purple-yellow-7-7: var(--phx-ref-color-yellow-60);
+  --phx-web-color-data-div-purple-yellow-9-1: var(--phx-ref-color-purple-60);
+  --phx-web-color-data-div-purple-yellow-9-2: var(--phx-ref-color-purple-40);
+  --phx-web-color-data-div-purple-yellow-9-3: var(--phx-ref-color-purple-30);
+  --phx-web-color-data-div-purple-yellow-9-4: var(--phx-ref-color-purple-20);
+  --phx-web-color-data-div-purple-yellow-9-5: var(--phx-ref-color-grey-10);
+  --phx-web-color-data-div-purple-yellow-9-6: var(--phx-ref-color-yellow-20);
+  --phx-web-color-data-div-purple-yellow-9-7: var(--phx-ref-color-yellow-30);
+  --phx-web-color-data-div-purple-yellow-9-8: var(--phx-ref-color-yellow-40);
+  --phx-web-color-data-div-purple-yellow-9-9: var(--phx-ref-color-yellow-60);
 
   /* ────────────────────────────────────────────────────────────────────────
      DATA — CATEGORICAL
