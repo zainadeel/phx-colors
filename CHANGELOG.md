@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/zainadeel/phx-colors/compare/v1.0.1...v1.1.0) (2026-04-24)
+
+
+### Added
+
+* **colors:** add 9-scale variants for diverging data palettes ([a675c69](https://github.com/zainadeel/phx-colors/commit/a675c69dc9812de801c32e81e6f96fd771e05087))
+* **colors:** add 9-scale variants for diverging data palettes ([533cda7](https://github.com/zainadeel/phx-colors/commit/533cda75961259b37ed1136936f6b9be6fbc17ed))
+
 ## [1.0.1](https://github.com/zainadeel/phx-colors/compare/v1.0.0...v1.0.1) (2026-04-23)
 
 

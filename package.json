@@ -1,6 +1,6 @@
 {
   "name": "@ds-phx/colors",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "phx-colors — Phoenix color tokens as CSS custom properties and TypeScript constants",
   "keywords": [
     "design-tokens",
